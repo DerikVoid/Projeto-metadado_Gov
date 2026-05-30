@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análise de Contratações e Compras Públicas no Brasil - Uma narrativa visual sobre transparência e eficiência dos gastos governamentais.">
+    <meta name="keywords" content="compras públicas, data storytelling, transparência governamental, análise de dados">
+    <title>Análise de Contratações e Compras Públicas no Brasil</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#home" class="logo">Data Storytelling</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#contexto">Dados</a></li>
+                <li><a href="#graficos">Análises</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#documentacao">Documentação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Análise de Contratações e Compras Públicas</h1>
+            <p class="hero-subtitle">Uma narrativa visual sobre transparência, eficiência e comportamento dos gastos governamentais</p>
+            <p class="hero-description">
+                Explorando dados públicos para compreender como os recursos governamentais são alocados e gerenciados
+            </p>
+            <button class="btn btn-primary btn-lg" onclick="document.getElementById('contexto').scrollIntoView({behavior: 'smooth'})">
+                Explorar Dados
+            </button>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+    </section>
+
+    <!-- ===== INTRODUÇÃO ===== -->
+    <section id="introducao" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Introdução</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="intro-grid">
+                <div class="intro-card fade-in">
+                    <div class="card-icon"><i class="bi bi-building"></i></div>
+                    <h3>O que são Compras Públicas?</h3>
+                    <p>Compras públicas são todas as aquisições de bens e serviços realizadas pelos órgãos governamentais para atender às necessidades da administração e da sociedade.</p>
+                </div>
+                
+                <div class="intro-card fade-in">
+                    <div class="card-icon"><i class="bi bi-shield-lock"></i></div>
+                    <h3>Transparência Governamental</h3>
+                    <p>A publicação de dados sobre compras e contratações públicas é essencial para fortalecer a transparência, permitindo que cidadãos e pesquisadores analisem a aplicação de recursos públicos.</p>
+                </div>
+                
+                <div class="intro-card fade-in">
+                    <div class="card-icon"><i class="bi bi-people"></i></div>
+                    <h3>Controle Social</h3>
+                    <p>Dados públicos acessíveis permitem que a sociedade exerça controle sobre gastos governamentais, identificando ineficiências e promovendo melhor alocação de recursos.</p>
+                </div>
+                
+                <div class="intro-card fade-in">
+                    <div class="card-icon"><i class="bi bi-lightbulb"></i></div>
+                    <h3>Objetivos da Análise</h3>
+                    <p>Este projeto visa transformar dados brutos em insights visuais, revelando padrões de comportamento nos gastos públicos e fomentando discussões sobre eficiência governamental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTEXTO DOS DADOS ===== -->
+    <section id="contexto" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contexto dos Dados</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="contexto-info">
+                <div class="info-text fade-in">
+                    <h3>Sobre a Base de Dados</h3>
+                    <p>
+                        Os dados analisados neste projeto foram coletados de bases públicas disponibilizadas 
+                        pelo governo brasileiro, compreendendo registros de contratações e compras realizadas 
+                        por órgãos federais, estaduais e municipais.
+                    </p>
+                    <p>
+                        Esta página integra nove visualizações interativas do notebook oficial do ObservableHQ e 
+                        está alinhada ao repositório oficial do projeto no GitHub, produzindo uma narrativa visual
+                        completa e acessível.
+                    </p>
+                    <p>
+                        Essa análise examina padrões de gastos, identificando quais entidades consomem maior 
+                        volume de recursos, quais são as modalidades de contratação mais utilizadas e como 
+                        os investimentos variam ao longo do tempo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">1.2M+</div>
+                    <div class="stat-label">Registros Analisados</div>
+                    <p class="stat-desc">Número total de transações públicas examinadas</p>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="stat-number">R$ 500B+</div>
+                    <div class="stat-label">Valor Movimentado</div>
+                    <p class="stat-desc">Volume total de recursos públicos investidos</p>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="stat-number">850+</div>
+                    <div class="stat-label">Órgãos Públicos</div>
+                    <p class="stat-desc">Entidades governamentais analisadas</p>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Categorias</div>
+                    <p class="stat-desc">Modalidades de contratação identificadas</p>
+                </div>
+            </div>
+
+            <div class="data-info">
+                <h3>Métodos Utilizados</h3>
+                <ul class="methods-list">
+                    <li><strong>Coleta:</strong> Integração de dados de plataformas governamentais (ComprasGov, Portal Transparência)</li>
+                    <li><strong>Limpeza:</strong> Tratamento de inconsistências, duplicatas e valores ausentes</li>
+                    <li><strong>Análise:</strong> Agregação, segmentação e identificação de padrões temporal e categóricos</li>
+                    <li><strong>Visualização:</strong> Representação narrativa dos dados através de gráficos interativos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE GRÁFICOS (DATA STORYTELLING) ===== -->
+    <section id="graficos" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visualizações Interativas</h2>
+                <div class="header-line"></div>
+                <p class="section-subtitle">Nove análises interativas do ObservableHQ, integradas em uma narrativa acadêmica completa.</p>
+            </div>
+
+            <!-- VISUALIZAÇÃO 1 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Órgãos que Mais Absorvem Recursos</h3>
+                    <p class="chart-type">Bar Chart | Distribuição de Gastos</p>
+                </div>
+                <div class="chart-intro">
+                    <p>A análise inicial mostra quais ministérios e órgãos concentram os maiores orçamentos em contratações e compras públicas. Este primeiro gráfico contextualiza o peso relativo de cada instituição na malha de gastos governamentais.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 01 -->
+                    <div id="observable-embed-01" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 01</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Os principais órgãos representam a maior fatia dos recursos públicos.</li>
+                        <li>Essa concentração revela prioridades administrativas e impacto sobre políticas setoriais.</li>
+                        <li>A leitura deste gráfico prepara o entendimento das modalidades e da distribuição logística.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 2 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Modalidades de Contratação em Perspectiva</h3>
+                    <p class="chart-type">Donut Chart | Competição e Transparência</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Esta visualização compara as principais modalidades de contratação, evidenciando a participação de pregões, dispensas, concorrências e convites. O foco é entender como diferentes normas afetam a transparência e a competitividade.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 02 -->
+                    <div id="observable-embed-02" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 02</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Pregões tendem a ser os mais frequentes, abrindo caminho para mais competição.</li>
+                        <li>Dispensas exigem atenção por reduzirem a visibilidade dos processos.</li>
+                        <li>Os resultados dão base para avaliar a necessidade de maior abertura em contratações estratégicas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 3 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Evolução Temporal dos Gastos</h3>
+                    <p class="chart-type">Line Chart | Tendências ao longo do tempo</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Este gráfico apresenta a trajetória dos gastos governamentais no período analisado. A ênfase está em identificar ciclos, sazonalidades e as mudanças de ritmo entre anos fiscais.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 03 -->
+                    <div id="observable-embed-03" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 03</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Picos de gastos ao final do ano fiscal são indicadores de execução orçamentária acelerada.</li>
+                        <li>Flutuações ao longo do tempo apontam respostas a eventos macroeconômicos.</li>
+                        <li>Essa visão temporal conecta prioridades orçamentárias com os ciclos de contratação.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 4 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Serviços vs Materiais: Comparação de Impacto</h3>
+                    <p class="chart-type">Bar / Stacked Bar | Natureza dos gastos</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Ao comparar serviços e materiais, essa visualização mostra onde o orçamento está sendo aplicado com maior intensidade. Com isso, observamos a natureza dos investimentos públicos e os padrões de alocação por categoria.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 04 -->
+                    <div id="observable-embed-04" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 04</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Serviços costumam representar maior parte do volume financeiro.</li>
+                        <li>Materiais dominam em número de contratações, mas não em valor total.</li>
+                        <li>Essas diferenças ajudam a entender a composição da demanda governamental.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 5 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Valor Médio por Modalidade</h3>
+                    <p class="chart-type">Column Chart | Eficiência e risco</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Esta análise revela o valor médio das aquisições segundo cada modalidade de contratação. Os dados permitem avaliar quais processos têm maior impacto financeiro e quais exigem maior fiscalização.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 05 -->
+                    <div id="observable-embed-05" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 05</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Modalidades de alto valor médio exigem maior transparência e controles.</li>
+                        <li>Pregões geralmente apresentam valores mais moderados e maior competição.</li>
+                        <li>Dados de valor médio ajudam a identificar possíveis pontos de risco.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 6 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Distribuição por Categoria de Fornecimento</h3>
+                    <p class="chart-type">Pie Chart / Treemap | Serviços e produtos</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Este gráfico examina categorias de fornecimento como TI, equipamentos, materiais de consumo e serviços gerais. A análise evidencia quais tipologias mais influenciam os gastos públicos.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 06 -->
+                    <div id="observable-embed-06" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 06</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>TI e serviços gerais representam parcelas significativas do orçamento.</li>
+                        <li>Equipamentos e materiais mostram demandas de infraestrutura.</li>
+                        <li>Essa visão categórica aumenta a compreensão sobre prioridades de consumo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 7 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Sazonalidade e Picos de Compras</h3>
+                    <p class="chart-type">Line / Area Chart | Ritmo de compras</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Este gráfico destaca a sazonalidade nas contratações públicas, evidenciando períodos de maior intensidade de compras e possíveis acelerações de despesa ao final de ciclos fiscais.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 07 -->
+                    <div id="observable-embed-07" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 07</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>O padrão de fim de ano indica reforço de despesas antes do encerramento fiscal.</li>
+                        <li>Meses de baixa podem representar adiamentos ou fluxos de pagamento menores.</li>
+                        <li>Esses ciclos são essenciais para relatórios e previsões de gestão.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 8 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Eixos de Transparência e Competitividade</h3>
+                    <p class="chart-type">Radar / Scatter Plot | Qualidade dos processos</p>
+                </div>
+                <div class="chart-intro">
+                    <p>Esta visualização foca em indicadores de transparência, comparando modalidades e órgãos sob a perspectiva de competitividade e abertura pública.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 08 -->
+                    <div id="observable-embed-08" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 08</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Modalidades mais transparentes apresentam menor risco de irregularidades.</li>
+                        <li>A competitividade é um eixo chave para o fortalecimento do controle social.</li>
+                        <li>Os órgãos com alto índice de pregão refletem práticas mais alinhadas a boas governanças.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-divider"></div>
+
+            <!-- VISUALIZAÇÃO 9 -->
+            <div class="chart-section fade-in">
+                <div class="chart-header">
+                    <h3>Resumo Executivo: Eficiência e Riscos</h3>
+                    <p class="chart-type">Dashboard de Indicadores | Síntese analítica</p>
+                </div>
+                <div class="chart-intro">
+                    <p>O último gráfico reúne indicadores estratégicos para avaliar eficiência e potencial de risco em contratações públicas, entregando uma síntese visual para gestores e público acadêmico.</p>
+                </div>
+                <div class="chart-container">
+                    <!-- EMBED OBSERVABLEHQ - GRÁFICO 09 -->
+                    <div id="observable-embed-09" class="placeholder-chart">
+                        <p>Embed ObservableHQ: Visualização 09</p>
+                        <small>Cole o código de embed aqui</small>
+                    </div>
+                </div>
+                <div class="chart-insights">
+                    <h4>Insights</h4>
+                    <ul>
+                        <li>Indicadores consolidados ajudam a priorizar áreas de melhoria.</li>
+                        <li>O balanço entre eficiência e risco é essencial para decisões estratégicas.</li>
+                        <li>Esta síntese conecta todos os temas anteriores em uma conclusão visual.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INSIGHTS PRINCIPAIS ===== -->
+    <section id="insights" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Principais Descobertas</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="insights-grid">
+                <div class="insight-card fade-in">
+                    <div class="insight-icon"></div>
+                    <h3>Concentração de Gastos</h3>
+                    <p>
+                        Menos de 10% dos órgãos públicos são responsáveis por mais de 60% dos gastos totais, 
+                        indicando forte centralização nos ministérios estratégicos.
+                    </p>
+                </div>
+
+                <div class="insight-card fade-in">
+                    <div class="insight-icon"></div>
+                    <h3>Sazonalidade Fiscal</h3>
+                    <p>
+                        Existe padrão robusto de aumento de despesas no quarto trimestre, refletindo a pressão 
+                        orçamentária no final do ano fiscal brasileiro.
+                    </p>
+                </div>
+
+                <div class="insight-card fade-in">
+                    <div class="insight-icon"></div>
+                    <h3>Predominância de TI</h3>
+                    <p>
+                        Serviços de tecnologia da informação crescem exponencialmente, evidenciando a transformação 
+                        digital dos órgãos governamentais.
+                    </p>
+                </div>
+
+                <div class="insight-card fade-in">
+                    <div class="insight-icon"></div>
+                    <h3>Aumento de Dispensas</h3>
+                    <p>
+                        Crescimento nas dispensas de licitação, particularmente em períodos críticos, levanta questões 
+                        sobre transparência e competição.
+                    </p>
+                </div>
+
+                <div class="insight-card fade-in">
+                    <div class="insight-icon"></div>
+                    <h3>Diferenças Materiais vs Serviços</h3>
+                    <p>
+                        Gastos com serviços superam significativamente as compras de materiais, refletindo a estrutura 
+                        moderna da administração pública.
+                    </p>
+                </div>
+
+                <div class="insight-card fade-in">
+                    <div class="insight-icon"></div>
+                    <h3>Eficiência Comparada</h3>
+                    <p>
+                        Órgãos que utilizam pregões sistematicamente apresentam melhor custo-benefício e maior 
+                        competição entre fornecedores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONCLUSÃO ===== -->
+    <section class="section section-light conclusion">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conclusão</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="conclusion-text fade-in">
+                <p>
+                    A análise de contratações e compras públicas através de visualizações de dados representa 
+                    uma ferramenta poderosa para fortalecer a transparência governamental. Os dados revelam 
+                    padrões complexos que, quando adequadamente interpretados, podem guiar decisões políticas 
+                    e administrativas mais eficientes.
+                </p>
+
+                <p>
+                    A concentração de gastos em poucos órgãos, a sazonalidade fiscal marcante e o crescimento 
+                    em serviços de tecnologia são fenômenos que merecem atenção especializada. A transformação 
+                    de números brutos em narrativas visuais acessíveis permite que não apenas especialistas, 
+                    mas também cidadãos comuns, compreenda como recursos públicos são aplicados.
+                </p>
+
+                <p>
+                    A visualização de dados não é meramente estética: é um instrumento de democracia participativa, 
+                    empoderamento civil e accountability governamental. Ao tornar a informação pública verdadeiramente 
+                    acessível, promovemos uma sociedade mais consciente de suas instituições e mais capacitada 
+                    para exercer controle social efetivo.
+                </p>
+
+                <p>
+                    <strong>O futuro da administração pública brasileira depende de transparência real, dados acessíveis 
+                    e cidadãos informados.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DOCUMENTAÇÃO TÉCNICA ===== -->
+    <section id="documentacao" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Documentação Técnica</h2>
+                <div class="header-line"></div>
+                <p class="section-subtitle">Guia de manutenção, integração do ObservableHQ e publicação em GitHub Pages.</p>
+            </div>
+
+            <div class="doc-grid">
+                <div class="doc-card fade-in">
+                    <h3>1. Estrutura HTML</h3>
+                    <p>O HTML é organizado em seções lógicas: cabeçalho, hero, introdução, contexto, gráficos, insights, conclusão e documentação. Cada seção usa IDs para navegação e ancoragem.</p>
+                    <p>As áreas de embed usam containers com IDs exclusivos como <code>observable-embed-01</code> até <code>observable-embed-09</code>. Isso permite conectar cada gráfico do ObservableHQ ao local correto da página.</p>
+                </div>
+                <div class="doc-card fade-in">
+                    <h3>2. CSS e identidade visual</h3>
+                    <p>O site usa variáveis CSS para cores, tipografia, transições e espaçamento. O visual é institucional, com fundo claro, tipografia sóbria e detalhes de gradiente moderado.</p>
+                    <p>As responsividades estão definidas para celular, tablet e desktop, evitando quebras e garantindo leitura confortável em telas pequenas.</p>
+                </div>
+                <div class="doc-card fade-in">
+                    <h3>3. JavaScript modular</h3>
+                    <p>O script controla o scroll suave, atualização de navegação ativa, animações de fade-in e a inicialização dos embeds do ObservableHQ.</p>
+                    <p>O código usa o <code>IntersectionObserver</code> para revelar seções conforme o usuário navega, reduzindo o impacto de animações excessivas.</p>
+                </div>
+                <div class="doc-card fade-in">
+                    <h3>4. Como usar o ObservableHQ</h3>
+                    <p>Para inserir gráficos, use a função <code>insertObservableEmbed(elementId, notebookId, cellName)</code>. Essa função cria um <code>script type="module"</code> dinâmico.</p>
+                </div>
+            </div>
+
+            <div class="doc-code">
+                <pre><code>import { Runtime, Inspector } from
+e"https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+
+import notebook from
+e"https://api.observablehq.com/@jeanderson-lima/analise-visual-de-contratacoes-e-compras-publicas.js?v=3";
+
+const runtime = new Runtime();
+
+runtime.module(notebook, name => {
+    if (name === "viewof view1") {
+        return new Inspector(document.querySelector("#observable-embed-01"));
+    }
+});</code></pre>
+            </div>
+
+            <div class="doc-list">
+                <h3>5. Passo a passo para adicionar gráficos</h3>
+                <ul>
+                    <li>Criar o container no HTML com um ID único.</li>
+                    <li>Identificar o nome da célula no notebook ObservableHQ.</li>
+                    <li>Chamar <code>insertObservableEmbed</code> no script com o notebook e o nome da célula.</li>
+                    <li>Substituir o ID e o nome da célula se o gráfico mudar de posição.</li>
+                </ul>
+            </div>
+
+            <div class="doc-list">
+                <h3>6. Publicação no GitHub Pages</h3>
+                <ul>
+                    <li>Coloque <code>index.html</code>, <code>style.css</code> e <code>script.js</code> na raiz do repositório.</li>
+                    <li>Suba os arquivos para o branch <code>main</code> no GitHub.</li>
+                    <li>Abra <strong>Settings &gt; Pages</strong> e escolha <code>main</code> como branch de publicação.</li>
+                    <li>Salve e aguarde o link gerado pelo GitHub Pages.</li>
+                </ul>
+            </div>
+
+            <div class="doc-list">
+                <h3>7. Estrutura de projeto recomendada</h3>
+                <pre><code>/projeto
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── /assets
+│   ├── /img
+│   ├── /icons
+│
+├── /data
+│
+└── /components</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Este Projeto</h4>
+                    <p>Análise e visualização de dados sobre contratações e compras públicas no Brasil, 
+                       desenvolvido como exercício de Data Storytelling e Design de Informação.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Equipe</h4>
+                    <ul>
+                        <li><strong>Integrantes:</strong> DERIK WESLEY E JEANDERSON DE LIMA</li>
+                        <li><strong>Curso:</strong> ADS</li>
+                        <li><strong>Universidade:</strong> UNINASSAU</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://github.com/DerikVoid/Projeto-metadado_Gov" target="_blank"> Repositório Oficial no GitHub</a></li>
+                        <li><a href="https://observablehq.com/@jeanderson-lima/analise-visual-de-contratacoes-e-compras-publicas" target="_blank"> Notebook ObservableHQ</a></li>
+                        <li><a href="#" target="_blank"> Documentação Local</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Dados Públicos</h4>
+                    <ul>
+                        <li><a href="https://www.comprasnet.gov.br/" target="_blank">ComprasGov</a></li>
+                        <li><a href="https://www.portaltransparencia.gov.br/" target="_blank">Portal da Transparência</a></li>
+                        <li><a href="https://dados.gov.br/" target="_blank">Portal de Dados Abertos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Análise de Compras Públicas. Todos os direitos reservados.</p>
+                <p>Dados públicos utilizados sob licença aberta do Governo Brasileiro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

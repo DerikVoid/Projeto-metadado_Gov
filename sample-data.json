@@ -1,0 +1,305 @@
+{
+  "metadados": {
+    "titulo": "Contratações e Compras Públicas no Brasil",
+    "data_atualizacao": "2024-05-29",
+    "fonte": "Portal da Transparência / ComprasGov",
+    "periodo": "2019-2023",
+    "total_registros": 1243567,
+    "valor_total": "R$ 542.8 bilhões"
+  },
+
+  "ministerios": [
+    {
+      "id": 1,
+      "nome": "Ministério da Defesa",
+      "abreviacao": "MD",
+      "gastos_2019": 142500000,
+      "gastos_2020": 145000000,
+      "gastos_2021": 148500000,
+      "gastos_2022": 155000000,
+      "gastos_2023": 158000000,
+      "total": 749000000,
+      "percentual": 28.5,
+      "descricao": "Defesa Nacional, Forças Armadas"
+    },
+    {
+      "id": 2,
+      "nome": "Ministério da Educação",
+      "abreviacao": "MEC",
+      "gastos_2019": 128000000,
+      "gastos_2020": 130500000,
+      "gastos_2021": 135000000,
+      "gastos_2022": 138500000,
+      "gastos_2023": 142000000,
+      "total": 674000000,
+      "percentual": 25.6,
+      "descricao": "Educação e Formação"
+    },
+    {
+      "id": 3,
+      "nome": "Ministério da Saúde",
+      "abreviacao": "MS",
+      "gastos_2019": 125000000,
+      "gastos_2020": 132500000,
+      "gastos_2021": 132000000,
+      "gastos_2022": 133500000,
+      "gastos_2023": 135000000,
+      "total": 658000000,
+      "percentual": 25.0,
+      "descricao": "Saúde Pública"
+    },
+    {
+      "id": 4,
+      "nome": "Ministério dos Transportes",
+      "abreviacao": "MTPT",
+      "gastos_2019": 78000000,
+      "gastos_2020": 79500000,
+      "gastos_2021": 80000000,
+      "gastos_2022": 81500000,
+      "gastos_2023": 82000000,
+      "total": 401000000,
+      "percentual": 15.2,
+      "descricao": "Infraestrutura de Transportes"
+    },
+    {
+      "id": 5,
+      "nome": "Ministério da Justiça",
+      "abreviacao": "MJ",
+      "gastos_2019": 62000000,
+      "gastos_2020": 63000000,
+      "gastos_2021": 64000000,
+      "gastos_2022": 65000000,
+      "gastos_2023": 65000000,
+      "total": 319000000,
+      "percentual": 12.1,
+      "descricao": "Justiça e Segurança"
+    },
+    {
+      "id": 6,
+      "nome": "Ministério da Agricultura",
+      "abreviacao": "MAPA",
+      "gastos_2019": 55000000,
+      "gastos_2020": 56000000,
+      "gastos_2021": 57000000,
+      "gastos_2022": 57500000,
+      "gastos_2023": 58000000,
+      "total": 283500000,
+      "percentual": 10.8,
+      "descricao": "Agricultura e Pecuária"
+    }
+  ],
+
+  "modalidades_contratacao": [
+    {
+      "id": 1,
+      "nome": "Pregão",
+      "descricao": "Modalidade moderna e competitiva",
+      "quantidade": 456789,
+      "percentual": 45.2,
+      "valor_medio": 125000,
+      "transparencia": "Alta",
+      "cor": "#3B82F6"
+    },
+    {
+      "id": 2,
+      "nome": "Concorrência",
+      "descricao": "Para grandes valores",
+      "quantidade": 234567,
+      "percentual": 23.3,
+      "valor_medio": 450000,
+      "transparencia": "Alta",
+      "cor": "#1D4E89"
+    },
+    {
+      "id": 3,
+      "nome": "Dispensa de Licitação",
+      "descricao": "Situações específicas",
+      "quantidade": 189234,
+      "percentual": 18.8,
+      "valor_medio": 89000,
+      "transparencia": "Média",
+      "cor": "#FFA500"
+    },
+    {
+      "id": 4,
+      "nome": "Convite",
+      "descricao": "Valores menores",
+      "quantidade": 123456,
+      "percentual": 12.2,
+      "valor_medio": 45000,
+      "transparencia": "Média",
+      "cor": "#9CA3AF"
+    }
+  ],
+
+  "evolucao_temporal": [
+    {
+      "ano": 2019,
+      "mes": "Janeiro",
+      "total_gastos": 42000000,
+      "quantidade_contratos": 85432,
+      "valor_medio": 491782
+    },
+    {
+      "ano": 2019,
+      "mes": "Fevereiro",
+      "total_gastos": 43500000,
+      "quantidade_contratos": 87654,
+      "valor_medio": 496332
+    },
+    {
+      "ano": 2019,
+      "mes": "Março",
+      "total_gastos": 45000000,
+      "quantidade_contratos": 89876,
+      "valor_medio": 500111
+    },
+    {
+      "ano": 2019,
+      "mes": "Abril",
+      "total_gastos": 46500000,
+      "quantidade_contratos": 91234,
+      "valor_medio": 509876
+    },
+    {
+      "ano": 2019,
+      "mes": "Maio",
+      "total_gastos": 48000000,
+      "quantidade_contratos": 93456,
+      "valor_medio": 513654
+    },
+    {
+      "ano": 2019,
+      "mes": "Junho",
+      "total_gastos": 49500000,
+      "quantidade_contratos": 95678,
+      "valor_medio": 517432
+    },
+    {
+      "ano": 2019,
+      "mes": "Julho",
+      "total_gastos": 51000000,
+      "quantidade_contratos": 97890,
+      "valor_medio": 521210
+    },
+    {
+      "ano": 2019,
+      "mes": "Agosto",
+      "total_gastos": 52500000,
+      "quantidade_contratos": 99234,
+      "valor_medio": 529876
+    },
+    {
+      "ano": 2019,
+      "mes": "Setembro",
+      "total_gastos": 54000000,
+      "quantidade_contratos": 101456,
+      "valor_medio": 532654
+    },
+    {
+      "ano": 2019,
+      "mes": "Outubro",
+      "total_gastos": 58500000,
+      "quantidade_contratos": 105678,
+      "valor_medio": 553876
+    },
+    {
+      "ano": 2019,
+      "mes": "Novembro",
+      "total_gastos": 62000000,
+      "quantidade_contratos": 109234,
+      "valor_medio": 567432
+    },
+    {
+      "ano": 2019,
+      "mes": "Dezembro",
+      "total_gastos": 65500000,
+      "quantidade_contratos": 112890,
+      "valor_medio": 580210
+    }
+  ],
+
+  "categorias_produtos_servicos": [
+    {
+      "categoria": "Serviços de TI",
+      "valor": 85000000,
+      "percentual": 28.3,
+      "crescimento": 15.2
+    },
+    {
+      "categoria": "Combustíveis e Energia",
+      "valor": 65000000,
+      "percentual": 21.7,
+      "crescimento": 8.5
+    },
+    {
+      "categoria": "Materiais de Consumo",
+      "valor": 45000000,
+      "percentual": 15.0,
+      "crescimento": 2.3
+    },
+    {
+      "categoria": "Equipamentos e Máquinas",
+      "valor": 38000000,
+      "percentual": 12.7,
+      "crescimento": 5.8
+    },
+    {
+      "categoria": "Serviços Gerais",
+      "valor": 32000000,
+      "percentual": 10.7,
+      "crescimento": 3.2
+    },
+    {
+      "categoria": "Outras Categorias",
+      "valor": 35000000,
+      "percentual": 11.6,
+      "crescimento": 1.5
+    }
+  ],
+
+  "insights_principais": [
+    {
+      "id": 1,
+      "titulo": "Concentração de Gastos",
+      "descricao": "Menos de 10% dos órgãos públicos são responsáveis por mais de 60% dos gastos totais",
+      "valor": "60%",
+      "tipo": "warning"
+    },
+    {
+      "id": 2,
+      "titulo": "Sazonalidade Fiscal",
+      "descricao": "Padrão robusto de aumento de despesas no quarto trimestre",
+      "valor": "+35%",
+      "tipo": "info"
+    },
+    {
+      "id": 3,
+      "titulo": "Crescimento de TI",
+      "descricao": "Serviços de tecnologia crescem exponencialmente",
+      "valor": "+15.2%",
+      "tipo": "success"
+    },
+    {
+      "id": 4,
+      "titulo": "Aumento de Dispensas",
+      "descricao": "Crescimento nas dispensas de licitação",
+      "valor": "+8.3%",
+      "tipo": "warning"
+    },
+    {
+      "id": 5,
+      "titulo": "Serviços vs Materiais",
+      "descricao": "Gastos com serviços superam materiais",
+      "valor": "65:35",
+      "tipo": "info"
+    }
+  ],
+
+  "fontes_dados": {
+    "portal_transparencia": "https://www.portaldatransparencia.gov.br/",
+    "comprasgov": "https://www.comprasnet.gov.br/",
+    "dados_abertos": "https://dados.gov.br/",
+    "serenata_amor": "https://serenata.ai/"
+  }
+}

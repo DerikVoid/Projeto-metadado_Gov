@@ -1,0 +1,37 @@
+# Arquivos do Sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Dependências (se adicionar npm)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Arquivos temporários
+*.log
+.temp/
+tmp/
+
+# Builds
+dist/
+build/
+*.bak
+
+# Ambiente
+.env
+.env.local
+.env.*.local

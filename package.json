@@ -1,0 +1,33 @@
+{
+  "name": "data-storytelling-site",
+  "version": "1.0.0",
+  "description": "Análise de Contratações e Compras Públicas no Brasil - Data Storytelling",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000",
+    "build": "echo 'No build step needed - static site'",
+    "lint": "echo 'Running linters'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "data-storytelling",
+    "compras-públicas",
+    "transparência",
+    "data-visualization",
+    "government-data",
+    "github-pages"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/data-storytelling-site.git"
+  },
+  "homepage": "https://seu-usuario.github.io/data-storytelling-site/",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

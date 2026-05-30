@@ -1,0 +1,267 @@
+<!-- 
+    GUIA: COMO INSERIR GRÁFICOS DO OBSERVABLEHQ
+    
+    Este arquivo contém exemplos de como integrar seus notebooks do ObservableHQ
+    no site de Data Storytelling.
+-->
+
+<!-- ===== MÉTODO 1: EMBED DIRETO HTML ===== -->
+
+<!-- 
+    Este é o método mais simples. Após criar seu gráfico no ObservableHQ,
+    clique em "Embed" e copie o código fornecido.
+-->
+
+<div class="chart-container">
+    <div id="observablehq-bar-chart"></div>
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/@seu-usuario/seu-notebook-id.js";
+        const runtime = new Runtime();
+        const main = runtime.module(define, name => {
+            if (name === "viewof data") {
+                return new Inspector(document.querySelector("#observablehq-bar-chart"));
+            }
+        });
+    </script>
+</div>
+
+
+<!-- ===== MÉTODO 2: USANDO A FUNÇÃO AUXILIAR NO SCRIPT.JS ===== -->
+
+<!-- 
+    Se preferir, use a função helper no script.js que já está preparada:
+    insertObservableEmbed(elementId, notebookId, cellName)
+-->
+
+<div class="chart-container" id="chart-ministrios"></div>
+
+<script>
+    // Descomente e configure com seus dados:
+    // insertObservableEmbed(
+    //     'chart-ministrios',
+    //     '@seu-usuario/nome-do-notebook',
+    //     'viewof data'
+    // );
+</script>
+
+
+<!-- ===== PASSO A PASSO: CRIAR NOTEBOOK NO OBSERVABLEHQ ===== -->
+
+<!--
+1. Acesse https://observablehq.com e faça login
+2. Clique em "New Notebook"
+3. Desenvolva seus gráficos em JavaScript (com D3.js, Plotly.js, etc.)
+4. Exemplo básico com D3.js:
+
+// Cells do Notebook:
+
+data = [
+  {ministry: "Defesa", amount: 150000},
+  {ministry: "Educação", amount: 120000},
+  {ministry: "Saúde", amount: 100000},
+  {ministry: "Transportes", amount: 80000},
+  {ministry: "Outros", amount: 50000}
+]
+
+viewof chart = {
+  const width = 800;
+  const height = 400;
+  const margin = {top: 20, right: 30, bottom: 30, left: 60};
+  
+  const svg = d3.create("svg")
+    .attr("width", width)
+    .attr("height", height);
+  
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.amount)])
+    .range([margin.left, width - margin.right]);
+  
+  const y = d3.scaleBand()
+    .domain(data.map(d => d.ministry))
+    .range([margin.top, height - margin.bottom])
+    .padding(0.1);
+  
+  // Adicionar barras
+  svg.selectAll("rect")
+    .data(data)
+    .join("rect")
+    .attr("x", margin.left)
+    .attr("y", d => y(d.ministry))
+    .attr("width", d => x(d.amount) - margin.left)
+    .attr("height", y.bandwidth())
+    .attr("fill", "#3B82F6");
+  
+  // Adicionar labels
+  svg.selectAll("text")
+    .data(data)
+    .join("text")
+    .attr("x", margin.left - 5)
+    .attr("y", d => y(d.ministry) + y.bandwidth() / 2)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "end")
+    .text(d => d.ministry);
+  
+  return svg.node();
+}
+
+5. Publique o notebook
+6. Copie o embed code ou note o seu ID de usuário + notebook ID
+-->
+
+
+<!-- ===== ESTRUTURA PARA ADICIONAR MÚLTIPLOS GRÁFICOS ===== -->
+
+<!--
+Se você tiver múltiplos notebooks, organize assim:
+-->
+
+<div class="chart-section">
+    <div class="chart-header">
+        <h3>Gráfico 1: Ministérios que Mais Gastaram</h3>
+    </div>
+    <div class="chart-container" id="chart-1"></div>
+    <!-- Cole aqui o código do seu primeiro embed -->
+</div>
+
+<div class="chart-section">
+    <div class="chart-header">
+        <h3>Gráfico 2: Modalidades de Contratação</h3>
+    </div>
+    <div class="chart-container" id="chart-2"></div>
+    <!-- Cole aqui o código do seu segundo embed -->
+</div>
+
+<div class="chart-section">
+    <div class="chart-header">
+        <h3>Gráfico 3: Evolução Temporal</h3>
+    </div>
+    <div class="chart-container" id="chart-3"></div>
+    <!-- Cole aqui o código do seu terceiro embed -->
+</div>
+
+
+<!-- ===== EXEMPLO COMPLETO COM DADOS REAIS ===== -->
+
+<!--
+    Este é um exemplo que você pode copiar e colar no seu notebook ObservableHQ
+    e adaptar com seus dados reais.
+-->
+
+<example-observable-notebook>
+{
+  // Dados de exemplo - Ministérios com gastos maiores
+  cells: [
+    {
+      id: "data",
+      value: `([
+        {ministry: "Defesa", amount: 158000, year: 2023},
+        {ministry: "Educação", amount: 142000, year: 2023},
+        {ministry: "Saúde", amount: 135000, year: 2023},
+        {ministry: "Transportes", amount: 82000, year: 2023},
+        {ministry: "Justiça", amount: 65000, year: 2023},
+        {ministry: "Agricultura", amount: 58000, year: 2023}
+      ])`
+    },
+    {
+      id: "viewof data",
+      value: `(Inputs.table(data))`
+    },
+    {
+      id: "chart",
+      value: `(Plot.barX(data, {x: "amount", y: "ministry", fill: "#3B82F6"}).plot({width: 900, height: 400}))`
+    }
+  ]
+}
+</example-observable-notebook>
+
+
+<!-- ===== DICAS E BOAS PRÁTICAS ===== -->
+
+<!--
+DICAS PARA MELHOR INTEGRAÇÃO:
+
+1. TAMANHO E RESPONSIVE:
+   - Certifique-se que seus gráficos são responsivos
+   - Use viewBox e dimensões percentuais quando possível
+   - Teste em mobile antes de publicar
+
+2. CORES:
+   - Use a paleta de cores do site:
+     Azul Escuro: #0A2540
+     Azul Médio: #1D4E89
+     Azul Claro: #3B82F6
+     Cinza Claro: #F3F4F6
+
+3. DADOS:
+   - Sempre documente a origem dos dados
+   - Adicione data de atualização
+   - Link para a fonte dos dados
+
+4. PERFORMANCE:
+   - Carregue apenas os dados necessários
+   - Use agregações quando possível
+   - Cache local para grandes datasets
+
+5. NARRATIVA:
+   - Cada gráfico deve ter:
+     * Um título claro
+     * Uma introdução explicativa
+     * Insights principais após o gráfico
+     * Links para fontes de dados
+
+6. ACESSIBILIDADE:
+   - Forneça tabela de dados alternativa
+   - Use cores significativas (não apenas estéticas)
+   - Adicione descrições alt para gráficos
+-->
+
+
+<!-- ===== RESOURCES E LINKS ÚTEIS ===== -->
+
+<!--
+Observable HQ:
+- https://observablehq.com/
+- https://observablehq.com/@d3/gallery
+- https://observablehq.com/@observablehq/plot
+
+D3.js:
+- https://d3js.org/
+- https://observablehq.com/@d3/gallery
+
+Plotly.js:
+- https://plotly.com/javascript/
+
+Vega-Lite:
+- https://vega.github.io/vega-lite/
+
+Dados Públicos Brasil:
+- https://www.portaldatransparencia.gov.br/
+- https://www.comprasnet.gov.br/
+- https://dados.gov.br/
+-->
+
+
+<!-- ===== SUPORTE E TROUBLESHOOTING ===== -->
+
+<!--
+Problema: Gráfico não aparece
+Solução: 
+  1. Verifique o notebook ID (@usuario/notebook-id)
+  2. Certifique-se que o notebook está publicado
+  3. Verifique o nome da célula (case-sensitive)
+  4. Abra o console do navegador (F12) para ver erros
+
+Problema: Gráfico muito lento
+Solução:
+  1. Reduza quantidade de dados
+  2. Agregue dados no ObservableHQ
+  3. Use webworkers para cálculos pesados
+
+Problema: Responsividade quebrada
+Solução:
+  1. Use dimensions do Observable
+  2. Configure width e height de forma relativa
+  3. Teste em diferentes tamanhos de tela
+-->
+

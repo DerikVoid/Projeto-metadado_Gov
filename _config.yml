@@ -1,0 +1,60 @@
+# GitHub Pages Configuration
+# Para mais informações: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-default-configuration
+
+# Configurações de Build
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Metadados do Site
+title: Análise de Contratações e Compras Públicas no Brasil
+description: Uma narrativa visual sobre transparência, eficiência e comportamento dos gastos governamentais
+url: https://DerikVoid.github.io/data-storytelling-site
+author: DERIK WESLEY E JEANDERSON DE LIMA
+email: reufai3033@gmail.com
+
+# Configurações de Escrita
+exclude:
+  - README.md
+  - OBSERVABLEHQ_GUIDE.html
+  - setup.sh
+  - setup.bat
+  - .gitignore
+  - package.json
+  - node_modules
+
+# Configurações de Saída
+output: web
+permalink: /:categories/:title
+
+# Collections (se adicionar posts/artigos no futuro)
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:title
+
+# Defaults (YAML Front Matter defaults)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Configurações de Desenvolvimento
+livereload: true
+livereload_min_delay: 100
+livereload_max_delay: 1000
+
+# GitHub Pages Specific
+keep_files:
+  - index.html
+  - style.css
+  - script.js
+  - assets
+
+# Encoding
+encoding: utf-8
