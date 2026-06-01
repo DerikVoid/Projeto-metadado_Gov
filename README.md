@@ -1,11 +1,11 @@
-# 📊 Análise de Contratações e Compras Públicas no Brasil
+# Análise de Contratações e Compras Públicas no Brasil
 ## Data Storytelling - Site Estático Acadêmico
 
 Um site moderno, elegante e responsivo para análise visual de dados sobre contratações e compras públicas no Brasil, desenvolvido com HTML5, CSS3 e JavaScript vanilla.
 
 ---
 
-## ✨ Características
+## Características
 
 - **Design Moderno e Profissional**: Inspirado em dashboards governamentais e portais de dados
 - **Totalmente Responsivo**: Funciona perfeitamente em celulares, tablets e desktops
@@ -17,7 +17,7 @@ Um site moderno, elegante e responsivo para análise visual de dados sobre contr
 
 ---
 
-## 🎨 Identidade Visual
+## Identidade Visual
 
 ### Paleta de Cores
 - **Azul Escuro**: `#0A2540` (primário)
@@ -33,7 +33,7 @@ Um site moderno, elegante e responsivo para análise visual de dados sobre contr
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 data-storytelling-site/
@@ -46,7 +46,7 @@ data-storytelling-site/
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
 ### 1. **Localmente**
 Abra o arquivo `index.html` diretamente no navegador:
@@ -97,7 +97,7 @@ git push -u origin main
 
 ---
 
-## 📊 Seções do Site
+## Seções do Site
 
 ### 1. **Navegação (Sticky)**
 - Menu fixo no topo com links suave para as seções
@@ -138,7 +138,7 @@ Cada gráfico inclui:
 
 ---
 
-## 🔗 Inserindo Gráficos do ObservableHQ
+## Inserindo Gráficos do ObservableHQ
 
 ### Passo 1: Criar Notebook no ObservableHQ
 1. Acesse [observablehq.com](https://observablehq.com)
@@ -178,7 +178,7 @@ insertObservableEmbed('chart-1', 'SEU_NOTEBOOK_ID', 'chart');
 
 ---
 
-## ⚙️ Personalizações
+## Personalizações
 
 ### Alterar Cores
 Edite as variáveis CSS em `style.css`:
@@ -207,7 +207,7 @@ Modifique as fontes em `style.css`:
 
 ---
 
-## 📱 Responsividade
+## Responsividade
 
 O site é totalmente responsivo com breakpoints em:
 - **Desktop**: `1200px+`
@@ -217,18 +217,18 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## ♿ Acessibilidade
+## Acessibilidade
 
-- ✅ Contraste WCAG AA em todos os textos
-- ✅ Hierarquia visual clara com semântica HTML5
-- ✅ Navegação intuitiva com links bem definidos
-- ✅ Botões acessíveis e responsivos
-- ✅ Estrutura semântica (`<header>`, `<section>`, `<footer>`)
-- ✅ Alt text preparado para imagens (quando adicionadas)
+-  Contraste WCAG AA em todos os textos
+-  Hierarquia visual clara com semântica HTML5
+-  Navegação intuitiva com links bem definidos
+-  Botões acessíveis e responsivos
+-  Estrutura semântica (`<header>`, `<section>`, `<footer>`)
+-  Alt text preparado para imagens (quando adicionadas)
 
 ---
 
-## ⚡ Performance
+##  Performance
 
 - **Tamanho total**: < 50KB (HTML + CSS + JS)
 - **Tempo de carregamento**: < 1s em conexão 3G
@@ -237,7 +237,7 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica
 - **CSS3**: Flexbox, Grid, Animações, Media Queries
@@ -247,7 +247,7 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## 📝 Exemplos de Dados
+## Exemplos de Dados
 
 ### Estatísticas Sugeridas
 - **1.2M+ Registros**: Número total de transações analisadas
@@ -264,7 +264,7 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Problema: Gráficos não aparecem
 **Solução**: Verifique se o notebook ID do ObservableHQ está correto
@@ -280,7 +280,7 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## 📊 Fontes de Dados Recomendadas
+## Fontes de Dados Recomendadas
 
 - [Portal Transparência Brasil](https://www.portaldatransparencia.gov.br/)
 - [ComprasGov](https://www.comprasnet.gov.br/)
@@ -289,7 +289,7 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## 📚 Referências e Inspirações
+##  Referências e Inspirações
 
 - [Data Journalism Review](https://www.datajournalism.com/)
 - [Observable (D3.js & Visualization)](https://observablehq.com/)
@@ -298,7 +298,7 @@ O site é totalmente responsivo com breakpoints em:
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Este projeto é disponibilizado sob licença **MIT**. Sinta-se livre para usar, modificar e distribuir.
 
@@ -316,7 +316,7 @@ Contribuições são bem-vindas! Para sugestões ou melhorias:
 
 ---
 
-## 🎓 Para Fins Acadêmicos
+##  Para Fins Acadêmicos
 
 Este site foi desenvolvido como exemplo de:
 - **Data Storytelling**: Transformação de dados em narrativas
@@ -327,21 +327,21 @@ Este site foi desenvolvido como exemplo de:
 
 ---
 
-**Desenvolvido com ❤️ para análise visual de dados públicos brasileiros**
+**Desenvolvido para análise visual de dados públicos brasileiros**
 
 ---
 
-## 🔄 Últimas Atualizações
+##  Últimas Atualizações
 
-- ✅ Estrutura HTML5 semântica completa
-- ✅ CSS3 responsivo com Flexbox e Grid
-- ✅ JavaScript vanilla com animações suaves
-- ✅ Integração com ObservableHQ pronta
-- ✅ Otimizado para GitHub Pages
-- ✅ Documentação completa
+-  Estrutura HTML5 semântica completa
+-  CSS3 responsivo com Flexbox e Grid
+-  JavaScript vanilla com animações suaves
+-  Integração com ObservableHQ pronta
+-  Otimizado para GitHub Pages
+-  Documentação completa
 
 ---
 
 **Versão**: 1.0.0  
 **Última atualização**: Maio de 2024  
-**Status**: Pronto para produção ✅
+**Status**: Pronto para produção
