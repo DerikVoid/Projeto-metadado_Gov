@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 3rem var(--spacing);
+    }
+
+    .intro-grid,
+    .stats-grid,
+    .insights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-section {
+        padding: 2rem;
+    }
+
+    .chart-container {
+        min-height: 300px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .chart-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .conclusion-text p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem var(--spacing);
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 2rem var(--spacing);
+    }
+
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+    .chart-insights {
+        padding: 1.5rem;
+    }
+
+    .chart-insights li {
+        font-size: 0.95rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

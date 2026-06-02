@@ -18,13 +18,13 @@
     "government-data",
     "github-pages"
   ],
-  "author": "Seu Nome",
+  "author": "Derik Wesley e Jeanderson de Lima",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/data-storytelling-site.git"
+    "url": "https://github.com/DerikVoid/Projeto-metadado_Gov.git"
   },
-  "homepage": "https://seu-usuario.github.io/data-storytelling-site/",
+  "homepage": "https://DerikVoid.github.io/Projeto-metadado_Gov/",
   "devDependencies": {},
   "dependencies": {},
   "engines": {

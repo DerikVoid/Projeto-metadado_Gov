@@ -12,12 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png">
 </head>
-<!-- Para formato PNG -->
-<link rel="icon" type="image/png" href="android-chrome-512x512.png">
 <body>
     <!-- ===== NAVIGATION ===== -->
     <nav class="navbar">
@@ -169,18 +168,15 @@
             <!-- VISUALIZAÇÃO 1 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Órgãos que Mais Absorvem Recursos</h3>
+                    <h3>Quantidade de contratações de serviços e de materiais pelo Governo</h3>
                     <p class="chart-type">Bar Chart | Distribuição de Gastos</p>
                 </div>
                 <div class="chart-intro">
-                    <p>A análise inicial mostra quais ministérios e órgãos concentram os maiores orçamentos em contratações e compras públicas. Este primeiro gráfico contextualiza o peso relativo de cada instituição na malha de gastos governamentais.</p>
+                    <p>O gráfico aponta uma clara preferência pelas contratações de serviços em detrimento da aquisição de materiais. Essa liderança se consolida de forma expressiva no painel, registrando uma vantagem exata de 30 contratações a mais voltadas para o setor de prestação de serviços.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 01 -->
-                    <div id="observable-embed-01" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 01</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-01"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -197,18 +193,15 @@
             <!-- VISUALIZAÇÃO 2 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Modalidades de Contratação em Perspectiva</h3>
+                    <h3>Valor total de serviços e materiais requisitados pelo governo</h3>
                     <p class="chart-type">Donut Chart | Competição e Transparência</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Esta visualização compara as principais modalidades de contratação, evidenciando a participação de pregões, dispensas, concorrências e convites. O foco é entender como diferentes normas afetam a transparência e a competitividade.</p>
+                    <p>O balanço financeiro reflete a dominância do setor de serviços também no orçamento. Os dados econômicos demonstram que a administração pública destinou um montante significativamente maior para essa categoria, gerando um gasto 50% superior em serviços comparado ao total investido em materiais.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 02 -->
-                    <div id="observable-embed-02" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 02</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-02"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -225,18 +218,15 @@
             <!-- VISUALIZAÇÃO 3 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Evolução Temporal dos Gastos</h3>
+                    <h3>Situações de compras requisitadas pelo Governo</h3>
                     <p class="chart-type">Line Chart | Tendências ao longo do tempo</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Este gráfico apresenta a trajetória dos gastos governamentais no período analisado. A ênfase está em identificar ciclos, sazonalidades e as mudanças de ritmo entre anos fiscais.</p>
+                    <p>O gráfico demonstra a quantidade de contratações realizadas pelo governo de acordo com a situação de cada processo. Observa-se que a maior parte das compras foi homologada, indicando processos concluídos com sucesso. Já uma quantidade menor aparece como fracassada, enquanto poucos processos ainda estão em andamento. Dessa forma, o gráfico permite analisar rapidamente o status geral das contratações públicas.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 03 -->
-                    <div id="observable-embed-03" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 03</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-03"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -253,18 +243,15 @@
             <!-- VISUALIZAÇÃO 4 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Serviços vs Materiais: Comparação de Impacto</h3>
+                    <h3>Empresas em que o Governo mais comprou</h3>
                     <p class="chart-type">Bar / Stacked Bar | Natureza dos gastos</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Ao comparar serviços e materiais, essa visualização mostra onde o orçamento está sendo aplicado com maior intensidade. Com isso, observamos a natureza dos investimentos públicos e os padrões de alocação por categoria.</p>
+                    <p>O gráfico demonstra a quantidade de requisições realizadas pelo governo para cada fornecedor, destacando o ranking dos parceiros mais acionados. Observa-se uma forte concentração em apenas três empresas líderes, que acumulam o maior volume de contratos. Já a grande maioria dos fornecedores aparece na faixa mínima, com apenas uma ou duas requisições. Dessa forma, o gráfico permite analisar rapidamente a distribuição e a dependência dos serviços públicos em relação aos principais fornecedores. São das demandas.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 04 -->
-                    <div id="observable-embed-04" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 04</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-04"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -281,18 +268,15 @@
             <!-- VISUALIZAÇÃO 5 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Valor Médio por Modalidade</h3>
+                    <h3>Serviços e produtos mais comprados pelo Governo</h3>
                     <p class="chart-type">Column Chart | Eficiência e risco</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Esta análise revela o valor médio das aquisições segundo cada modalidade de contratação. Os dados permitem avaliar quais processos têm maior impacto financeiro e quais exigem maior fiscalização.</p>
+                    <p>O gráfico apresenta o ranking dos 15 produtos e serviços mais contratados pela administração pública com base no volume absoluto de processos. Nota-se uma forte predominância de demandas voltadas ao setor de comunicação visual, serviços gráficos e papelaria corporativa, com destaque para a confecção de impressos, selos e sacolas personalizadas liderando as ocorrências. Essa distribuição evidencia como os materiais de suporte logístico, divulgação e identidade institucional representam compras repetitivas e de alta rotatividade na máquina pública, demandando atenção contínua para o ganho de escala e eficiência nas atas de registro de preços.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 05 -->
-                    <div id="observable-embed-05" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 05</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-05"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -309,18 +293,15 @@
             <!-- VISUALIZAÇÃO 6 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Distribuição por Categoria de Fornecimento</h3>
+                    <h3>Qual ano teve mais compras e sua evolução por tempo</h3>
                     <p class="chart-type">Pie Chart / Treemap | Serviços e produtos</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Este gráfico examina categorias de fornecimento como TI, equipamentos, materiais de consumo e serviços gerais. A análise evidencia quais tipologias mais influenciam os gastos públicos.</p>
+                    <p>O gráfico de dispersão temporal revela que as contratações do governo operam em ritmo cadenciado (bolhas escuras menores), mas sofrem picos maciços de concentração. O ano de 2026 concentra o maior volume de compras de todo o histórico, impulsionado por um evento extraordinário em abril de 2026 (bolha amarela gigante), onde as aquisições explodiram e atingiram a marca de 100 contratações acumuladas em um curto período.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 06 -->
-                    <div id="observable-embed-06" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 06</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-06"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -337,18 +318,15 @@
             <!-- VISUALIZAÇÃO 7 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Sazonalidade e Picos de Compras</h3>
+                    <h3>Comparativo entre Valor Unitário Estimado e Valor Total das Compras</h3>
                     <p class="chart-type">Line / Area Chart | Ritmo de compras</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Este gráfico destaca a sazonalidade nas contratações públicas, evidenciando períodos de maior intensidade de compras e possíveis acelerações de despesa ao final de ciclos fiscais.</p>
+                    <p>O gráfico demonstra que enquanto o preço unitário planejado (valor_unitario_estimado) permanece baixo e linear próximo ao zero, o gasto executado (valor_total) sofre flutuações e saltos massivos devido ao grande volume de itens adquiridos por contrato. Esse comportamento fica evidente no périodo de estabilidade de R$ 150.000,00 entre fevereiro e abril, seguido por uma disparada rigorosa logo após o dia 19 de abril, onde o acúmulo de contratações atinge o pico histórico do período ao ultrapassar a marca dos R$ 800.000,00.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 07 -->
-                    <div id="observable-embed-07" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 07</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-07"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -365,18 +343,15 @@
             <!-- VISUALIZAÇÃO 8 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Eixos de Transparência e Competitividade</h3>
+                    <h3>Critérios de Julgamento mais Usados nas Compras Públicas</h3>
                     <p class="chart-type">Radar / Scatter Plot | Qualidade dos processos</p>
                 </div>
                 <div class="chart-intro">
-                    <p>Esta visualização foca em indicadores de transparência, comparando modalidades e órgãos sob a perspectiva de competitividade e abertura pública.</p>
+                    <p>O gráfico de barras verticais aponta uma forte predominância do critério de "Menor preço" como a métrica principal para a escolha de fornecedores nos processos licitatórios registrados. Essa concentração evidencia que a administração pública prioriza a economia direta de recursos e a competitividade por custos na maior parte de suas aquisições, deixando formatos alternativos de julgamento em segundo plano ou categorizados como não aplicáveis para os itens analisados.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 08 -->
-                    <div id="observable-embed-08" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 08</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-08"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -393,18 +368,15 @@
             <!-- VISUALIZAÇÃO 9 -->
             <div class="chart-section fade-in">
                 <div class="chart-header">
-                    <h3>Resumo Executivo: Eficiência e Riscos</h3>
+                    <h3>Análise do Uso de Benefícios e Incentivos para Empresas</h3>
                     <p class="chart-type">Dashboard de Indicadores | Síntese analítica</p>
                 </div>
                 <div class="chart-intro">
-                    <p>O último gráfico reúne indicadores estratégicos para avaliar eficiência e potencial de risco em contratações públicas, entregando uma síntese visual para gestores e público acadêmico.</p>
+                    <p>O gráfico de barras empilhadas evidencia a aplicação de políticas de fomento econômico nas contratações públicas, destacando a relevância da "Participação exclusiva para ME/EPP"(Micro Empresas) e revelando como esses incentivos se distribuem entre a aquisição de materiais e a prestação de serviços. Essa visualização combinada comprova o cumprimento das diretrizes legais de proteção às microempresas e empresas de pequeno porte em ambas as categorias de compra, permitindo monitorar onde os benefícios governamentais estão sendo mais efetivos e quais setores ainda operam predominantemente sob ampla concorrência ou sem incentivos específicos.</p>
                 </div>
                 <div class="chart-container">
                     <!-- EMBED OBSERVABLEHQ - GRÁFICO 09 -->
-                    <div id="observable-embed-09" class="placeholder-chart">
-                        <p>Embed ObservableHQ: Visualização 09</p>
-                        <small>Cole o código de embed aqui</small>
-                    </div>
+                    <div id="observable-embed-09"></div>
                 </div>
                 <div class="chart-insights">
                     <h4>Insights</h4>
@@ -618,6 +590,52 @@ runtime.module(notebook, name => {
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+    
+    <!-- Observable Embeds Loader - Backup Inline Approach -->
+    <script type="module">
+        // Carregador robusto de embeds do ObservableHQ
+        // Este script garante que os gráficos sejam renderizados mesmo se o módulo principal falhar
+        
+        (async () => {
+            try {
+                const { Runtime, Inspector } = await import(
+                    'https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js'
+                );
+                
+                const notebook = await import(
+                    'https://api.observablehq.com/@jeanderson-lima/analise-visual-de-contratacoes-e-compras-publicas.js?v=3'
+                );
+                
+                const runtime = new Runtime();
+                const inspect = (name) => {
+                    // Mapeia células para containers
+                    const cellMap = {
+                        'viewof view1': 'observable-embed-01',
+                        'viewof view2': 'observable-embed-02',
+                        'viewof view3': 'observable-embed-03',
+                        'viewof view4': 'observable-embed-04',
+                        'viewof view5': 'observable-embed-05',
+                        'viewof view6': 'observable-embed-06',
+                        'viewof view7': 'observable-embed-07',
+                        'viewof view8': 'observable-embed-08',
+                        'viewof view9': 'observable-embed-09'
+                    };
+                    
+                    if (cellMap[name]) {
+                        const container = document.getElementById(cellMap[name]);
+                        if (container) {
+                            return new Inspector(container);
+                        }
+                    }
+                };
+                
+                runtime.module(notebook.default, inspect);
+                console.log('✓ Embeds Observable carregados com sucesso (inline)');
+            } catch (error) {
+                console.error('✗ Erro ao carregar embeds:', error.message);
+            }
+        })();
+    </script>
 </body>
 </html>
